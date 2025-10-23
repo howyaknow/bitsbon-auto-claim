@@ -8,10 +8,10 @@ class Server {
         const usernames = [
             'leiamnash',
             'mynameishi',
-            'mynameishello'
+            'mynameishello',
+            'iloveabi'
         ];
         const password = 'Leiamnash0616';
-        const port = process.env.PORT || 3000;
 
         colors.setTheme({
             info: 'green',
@@ -58,7 +58,7 @@ class Server {
             res.send('Multi-account Auto Farm Script is running...');
         });
 
-        app.listen(port, async () => {
+        app.listen(3000, async () => {
             displayHeader();
             console.log(colors.verbose.bold(`[ SERVER ] Listening on port ${port}`));
             await runEveryTenMinutes();
